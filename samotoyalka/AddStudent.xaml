@@ -1,0 +1,22 @@
+﻿<Window x:Class="samotoyalka.AddStudent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:samotoyalka"
+        mc:Ignorable="d"
+        Title="AddStudent" Height="412" Width="486" Background="White">
+    <Grid>
+        <Label Content="Редактирование записей о студентах" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Height="43" Width="409" FontSize="22" FontWeight="Bold"/>
+        <Label Content="ФИО:" HorizontalAlignment="Left" Margin="10,71,0,0" VerticalAlignment="Top" Height="43" Width="74" FontSize="18" />
+        <Label Content="Почта:" HorizontalAlignment="Left" Margin="7,128,0,0" VerticalAlignment="Top" Height="43" Width="89" FontSize="18" />
+        <Label Content="Курс:" HorizontalAlignment="Left" Margin="7,192,0,0" VerticalAlignment="Top" Height="42" Width="78" FontSize="18" />
+        <TextBox Text="{Binding ФИО}" HorizontalAlignment="Left" Margin="93,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="373" Height="30" BorderBrush="Black"/>
+        <TextBox Text="{Binding Почта}" HorizontalAlignment="Left" Margin="93,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="373" Height="30" BorderBrush="Black"/>
+        <TextBox Text="{Binding Курс}" x:Name="tbKurs" HorizontalAlignment="Left" Margin="95,198,0,0" VerticalAlignment="Top" Width="371" Height="30"/>
+        <Button Content="Сохранить" HorizontalAlignment="Center" Margin="0,324,0,0" VerticalAlignment="Top" FontSize="20" Width="182" Height="35" BorderBrush="Black" Click="saveStudentButton_Click"/>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="10,324,0,0" VerticalAlignment="Top" FontSize="20" Width="101" Height="35" BorderBrush="Black" Click="backStudentButton_Click"/>
+        <Label Content="Код студента:" HorizontalAlignment="Left" Margin="7,247,0,0" VerticalAlignment="Top" Height="42" Width="129" FontSize="18" />
+        <TextBox Text="{Binding Код}"  HorizontalAlignment="Left" Margin="136,253,0,0" VerticalAlignment="Top" Width="330" Height="30"/>
+    </Grid>
+</Window>
